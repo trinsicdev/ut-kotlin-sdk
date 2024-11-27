@@ -1,12 +1,12 @@
-package net.playranked.library.ut.request
+package dev.trinsic.library.ut.request
 
 import com.github.kittinunf.fuel.core.FileDataPart
 import com.github.kittinunf.fuel.core.InlineDataPart
 import com.github.kittinunf.fuel.httpUpload
-import net.playranked.library.ut.APIResponse
-import net.playranked.library.ut.response.FailedResponse
-import net.playranked.library.ut.response.UploadFilesResponse
-import net.playranked.library.ut.response.UploadSuccessResponse
+import dev.trinsic.library.ut.APIResponse
+import dev.trinsic.library.ut.response.FailedResponse
+import dev.trinsic.library.ut.response.UploadFilesResponse
+import dev.trinsic.library.ut.response.UploadSuccessResponse
 import java.io.File
 
 class S3UploadFileRequest(private val file: File, private val presignedRequest: UploadFilesResponse) {

@@ -1,6 +1,6 @@
-package net.playranked.library.ut.response
+package dev.trinsic.library.ut.response
 
-import net.playranked.library.ut.APIResponse
+import dev.trinsic.library.ut.APIResponse
 
 class UploadFilesResponse(
     val url: String,

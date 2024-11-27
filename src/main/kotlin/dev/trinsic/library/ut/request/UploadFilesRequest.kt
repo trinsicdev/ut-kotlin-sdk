@@ -1,12 +1,12 @@
-package net.playranked.library.ut.request
+package dev.trinsic.library.ut.request
 
 import com.github.kittinunf.fuel.core.extensions.jsonBody
 import com.github.kittinunf.fuel.httpPost
 import com.google.gson.JsonObject
-import net.playranked.library.ut.APIResponse
-import net.playranked.library.ut.UploadThing
-import net.playranked.library.ut.response.FailedResponse
-import net.playranked.library.ut.response.UploadFilesResponse
+import dev.trinsic.library.ut.APIResponse
+import dev.trinsic.library.ut.UploadThing
+import dev.trinsic.library.ut.response.FailedResponse
+import dev.trinsic.library.ut.response.UploadFilesResponse
 import java.io.File
 import kotlin.io.path.fileSize
 
@@ -17,7 +17,8 @@ class UploadFilesRequest(private val apiKey: String, private val file: File) {
     fun execute(res: (APIResponse) -> Unit) {
         val (_, response, result) = (UploadThing.BASE_URL + PATH).httpPost()
             .header("X-Uploadthing-Api-Key", apiKey)
-            .jsonBody(UploadThing.GSON.toJson(mapOf(
+            .jsonBody(
+                UploadThing.GSON.toJson(mapOf(
                 "files" to arrayOf(
                     mapOf(
                         "name" to file.name,

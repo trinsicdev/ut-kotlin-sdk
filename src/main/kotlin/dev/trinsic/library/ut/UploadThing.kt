@@ -1,11 +1,11 @@
-package net.playranked.library.ut
+package dev.trinsic.library.ut
 
 import com.google.gson.Gson
-import net.playranked.library.ut.request.S3UploadFileRequest
-import net.playranked.library.ut.request.UploadFilesRequest
-import net.playranked.library.ut.response.FailedResponse
-import net.playranked.library.ut.response.UploadFilesResponse
-import net.playranked.library.ut.response.UploadSuccessResponse
+import dev.trinsic.library.ut.request.S3UploadFileRequest
+import dev.trinsic.library.ut.request.UploadFilesRequest
+import dev.trinsic.library.ut.response.FailedResponse
+import dev.trinsic.library.ut.response.UploadFilesResponse
+import dev.trinsic.library.ut.response.UploadSuccessResponse
 import java.io.File
 
 class UploadThing(private val apiKey: String) {

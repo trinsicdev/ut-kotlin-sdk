@@ -9,13 +9,13 @@ Maven
 ```xml
 <repositories>
   <repository>
-    <id>playranked-public</id>
-    <url>https://nexus.playranked.net/repository/public/</url>
+    <id>trinsic-public</id>
+    <url>https://repo.trinsic.dev/repository/minecraft-public/</url>
   </repository>
 </repositories>
 
 <dependency>
-  <groupId>net.playranked.library</groupId>
+  <groupId>dev.trinsic.library</groupId>
   <artifactId>ut-kotlin-sdk</artifactId>
   <version>1.0</version>
 </dependency>  
@@ -23,8 +23,8 @@ Maven
 Gradle
 ```groovy
 maven {
-    url = "https://nexus.playranked.net/repository/public/"
+    url = "https://repo.trinsic.dev/repository/minecraft-public/"
 }
 
-implementation 'net.playranked.library:ut-kotlin-sdk:1.0'
+implementation 'dev.trinsic.library:ut-kotlin-sdk:1.0'
 ```
